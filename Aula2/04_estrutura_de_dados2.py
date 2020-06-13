@@ -23,18 +23,24 @@ print(lista_aluno)
 # Dicionários
 aluno = {'nome':'Maykon', 'sobrenome':'Granemann','idade': 15,'lista_notas':[10,8,6,4] }
 aluno2 = {'nome':'Dyego', 'sobrenome':'Granemann','idade': 18,'lista_notas':[9,8,5,6] }
+# Criando lista de dicionários
 lista = [aluno,aluno2]
 print(aluno)
 print(aluno['nome'])
+# Alterando dado do dicionário
 aluno['nome'] = 'Tadeu'
 print(aluno)
+# Alterando dado da lista dentro do dicionário
 aluno['lista_notas'][3] = 9
 print(aluno)
-#print(aluno[0])
-# dict_numeros = {'n1':10, 2:3,3:5}
-# print(dict_numeros)
+
+# não é possivel acessar dados do dicionário pelo index
+# print(aluno[0])
+
+# Imprimindo lista de dicionários utilizando for
 print('Imprimindo com for ....')
 for a in lista:
+    # imprimindo cada dado do dicionário através das chaves
     print(a['nome'])
     print(a['sobrenome'])
     print(a['idade'])
